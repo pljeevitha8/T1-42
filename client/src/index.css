@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #070B19;
+    color: #F1F5F9;
+  }
+
+  /* Custom Forensic Scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0B132B;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1C2951;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #6366F1;
+  }
+}
+
+/* Forensic graphite paper overlay effect */
+.forensic-canvas {
+  background-color: #12151C;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Biometric alignment grid overlay */
+.biometric-grid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: 
+    linear-gradient(to right, rgba(99, 102, 241, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(99, 102, 241, 0.15) 1px, transparent 1px);
+  background-size: 33.333% 33.333%;
+}
+
+/* Pulsing radar effect */
+@keyframes radar-sweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-radar {
+  animation: radar-sweep 4s linear infinite;
+}

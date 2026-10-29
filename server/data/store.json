@@ -1,0 +1,544 @@
+{
+  "users": [
+    {
+      "id": "USR-001",
+      "email": "lead.investigator@metro-forensics.gov",
+      "name": "Dr. Marcus Vance",
+      "badgeNumber": "B-8492",
+      "department": "Major Crimes & Forensic Imaging Division",
+      "role": "admin",
+      "passwordHash": "$2a$10$GGx4VVpfz.TfcI55d1qtw.eJ34nbDi7sDAjkLGi2.7a4MXo8OU0Ai"
+    },
+    {
+      "id": "USR-002",
+      "email": "artist.chen@metro-forensics.gov",
+      "name": "Elena Rostova",
+      "badgeNumber": "FA-1044",
+      "department": "Forensic Art & Facial Reconstruction Unit",
+      "role": "investigator",
+      "passwordHash": "$2a$10$GGx4VVpfz.TfcI55d1qtw.eJ34nbDi7sDAjkLGi2.7a4MXo8OU0Ai"
+    },
+    {
+      "id": "USR-003",
+      "email": "reviewer.guest@metro-forensics.gov",
+      "name": "Det. Liam Hayes",
+      "badgeNumber": "D-3180",
+      "department": "Special Investigations Bureau",
+      "role": "reviewer",
+      "passwordHash": "$2a$10$GGx4VVpfz.TfcI55d1qtw.eJ34nbDi7sDAjkLGi2.7a4MXo8OU0Ai"
+    }
+  ],
+  "cases": [
+    {
+      "id": "CASE-2026-0814",
+      "title": "Downtown Metropolitan Vault Burglary — Suspect \"Apex\"",
+      "incidentType": "Armed Burglary & Grand Larceny",
+      "incidentLocation": "Vault 4, 400 Financial Plaza, Metro City",
+      "incidentDate": "2026-10-24 02:45",
+      "witnessName": "Julian Sterling (Night Security Officer)",
+      "witnessContact": "555-019-4821",
+      "investigatorId": "USR-001",
+      "investigatorName": "Dr. Marcus Vance",
+      "status": "ACTIVE",
+      "priority": "CRITICAL",
+      "witnessStatement": "Suspect was a male, late 30s, around 6ft tall. Extremely sharp angular jawline, sunken cheeks with several days of dark stubble. He had intense, deep-set hooded dark eyes with thick straight eyebrows. Hair was short cropped, dark brown, slightly receding at temples. He had a distinct horizontal scar through his left eyebrow.",
+      "features": {
+        "gender": "Male",
+        "ageGroup": "36-45",
+        "faceShape": "Diamond",
+        "skinTone": "Olive",
+        "eyesShape": "Deep-set",
+        "eyeColor": "Dark",
+        "eyebrows": "Thick Bushy",
+        "nose": "Aquiline / Hooked",
+        "jawline": "Sharp Angular",
+        "hairstyle": "Short Cropped",
+        "hairColor": "Dark Brown",
+        "facialHair": "5 O'Clock Shadow",
+        "distinctiveFeatures": [
+          "Scar over left eyebrow",
+          "Hollow cheeks"
+        ],
+        "accessories": [
+          "None"
+        ],
+        "refinements": {
+          "ageOffset": 2,
+          "jawWidth": 68,
+          "eyeNarrowness": 72,
+          "noseProminence": 65,
+          "stubbleDensity": 75,
+          "cheekHollow": 80
+        }
+      },
+      "sketches": [
+        {
+          "id": "SKT-0814-V1",
+          "versionNumber": 1,
+          "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&auto=format&fit=crop&q=80",
+          "prompt": "Forensic facial composite pencil sketch, realistic graphite drawing on parchment, male mid 30s, sharp angular jawline, deep hooded eyes, thick straight eyebrows, short cropped dark hair, subtle scar over left eyebrow, dark stubble, police forensic artist sketch, neutral lighting, frontal mugshot view, cross-hatching, highly detailed forensic illustration",
+          "negativePrompt": "photograph, 3d render, anime, vibrant colors, blurry, smiling, cartoon, deformed, makeup",
+          "modelUsed": "ForensicSketch-XL (Graphite Core)",
+          "provider": "pollinations",
+          "confidenceScore": 86,
+          "refinementNotes": "Initial composite sketch generated from security officer testimony.",
+          "createdAt": "2026-10-24T04:15:00Z",
+          "createdBy": "Dr. Marcus Vance",
+          "featuresSnapshot": {
+            "gender": "Male",
+            "ageGroup": "36-45",
+            "faceShape": "Diamond",
+            "skinTone": "Olive",
+            "eyesShape": "Deep-set",
+            "eyeColor": "Dark",
+            "eyebrows": "Thick Bushy",
+            "nose": "Aquiline / Hooked",
+            "jawline": "Sharp Angular",
+            "hairstyle": "Short Cropped",
+            "hairColor": "Dark Brown",
+            "facialHair": "5 O'Clock Shadow",
+            "distinctiveFeatures": [
+              "Scar over left eyebrow"
+            ],
+            "accessories": [],
+            "refinements": {
+              "ageOffset": 0,
+              "jawWidth": 50,
+              "eyeNarrowness": 50,
+              "noseProminence": 50,
+              "stubbleDensity": 50,
+              "cheekHollow": 50
+            }
+          },
+          "biometricMetrics": {
+            "cranialRatio": 1.34,
+            "interpupillaryDistance": 64.2,
+            "jawAngleDegrees": 112.5,
+            "symmetryScore": 94.1
+          }
+        },
+        {
+          "id": "SKT-0814-V2",
+          "versionNumber": 2,
+          "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=800&auto=format&fit=crop&q=80",
+          "prompt": "Forensic facial composite pencil sketch, detailed graphite portrait, male 38 years old, sharpened angular jawline, deeper cheek hollows, heavier 5 o clock shadow stubble, pronounced scar slicing left eyebrow, forensic police artist drawing, charcoal cross-hatching, high contrast monochrome, anatomical precision",
+          "negativePrompt": "photograph, cartoon, color, deformed",
+          "modelUsed": "ForensicSketch-XL (Graphite Core)",
+          "provider": "pollinations",
+          "confidenceScore": 93,
+          "refinementNotes": "Witness requested sharper jawline (+18%), intensified cheek hollows, and heavier stubble.",
+          "createdAt": "2026-10-24T05:30:00Z",
+          "createdBy": "Elena Rostova",
+          "featuresSnapshot": {
+            "gender": "Male",
+            "ageGroup": "36-45",
+            "faceShape": "Diamond",
+            "skinTone": "Olive",
+            "eyesShape": "Deep-set",
+            "eyeColor": "Dark",
+            "eyebrows": "Thick Bushy",
+            "nose": "Aquiline / Hooked",
+            "jawline": "Sharp Angular",
+            "hairstyle": "Short Cropped",
+            "hairColor": "Dark Brown",
+            "facialHair": "5 O'Clock Shadow",
+            "distinctiveFeatures": [
+              "Scar over left eyebrow",
+              "Hollow cheeks"
+            ],
+            "accessories": [],
+            "refinements": {
+              "ageOffset": 2,
+              "jawWidth": 68,
+              "eyeNarrowness": 72,
+              "noseProminence": 65,
+              "stubbleDensity": 75,
+              "cheekHollow": 80
+            }
+          },
+          "biometricMetrics": {
+            "cranialRatio": 1.35,
+            "interpupillaryDistance": 64,
+            "jawAngleDegrees": 109.8,
+            "symmetryScore": 95.8
+          }
+        }
+      ],
+      "primarySketchId": "SKT-0814-V2",
+      "notes": "Second iteration verified by witness with 90%+ recognition confidence. Authorized for investigative lead bulletins.",
+      "createdAt": "2026-10-24T03:30:00Z",
+      "updatedAt": "2026-10-24T05:35:00Z"
+    },
+    {
+      "id": "CASE-2026-0922",
+      "title": "Harbor Arts District Courier Interception — Suspect \"Vesper\"",
+      "incidentType": "Armed Hijacking & High-Value Transit Robbery",
+      "incidentLocation": "Pier 19 Transit Tunnel, North Bay",
+      "incidentDate": "2026-10-26 21:15",
+      "witnessName": "Rachel Navarro (Transport Logistics Driver)",
+      "witnessContact": "555-018-9923",
+      "investigatorId": "USR-002",
+      "investigatorName": "Elena Rostova",
+      "status": "ACTIVE",
+      "priority": "HIGH",
+      "witnessStatement": "Suspect was an athletic female, late 20s to early 30s. Very prominent high cheekbones, square defined jaw, piercing almond-shaped eyes with arched narrow eyebrows. Dark hair slicked back tightly into a bun or ponytail. She wore thin wire-framed dark tinted glasses and a high-collar ballistic windbreaker.",
+      "features": {
+        "gender": "Female",
+        "ageGroup": "26-35",
+        "faceShape": "Square",
+        "skinTone": "Fair / Pale",
+        "eyesShape": "Almond",
+        "eyeColor": "Hazel",
+        "eyebrows": "Angular High Arch",
+        "nose": "Straight",
+        "jawline": "Square Chiseled",
+        "hairstyle": "Long Slicked",
+        "hairColor": "Black",
+        "facialHair": "Clean Shaven",
+        "distinctiveFeatures": [
+          "High prominent cheekbones",
+          "Small mole right upper lip"
+        ],
+        "accessories": [
+          "Wire-rim spectacles"
+        ],
+        "refinements": {
+          "ageOffset": -1,
+          "jawWidth": 62,
+          "eyeNarrowness": 60,
+          "noseProminence": 45,
+          "stubbleDensity": 0,
+          "cheekHollow": 65
+        }
+      },
+      "sketches": [
+        {
+          "id": "SKT-0922-V1",
+          "versionNumber": 1,
+          "imageUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=800&auto=format&fit=crop&q=80",
+          "prompt": "Forensic facial composite pencil sketch, female late 20s, square structured jaw, prominent high cheekbones, almond shaped eyes, arched eyebrows, sleek hair pulled back, wire-rim glasses, graphite pencil texture on paper, police forensic artist sketch, neutral gaze, cross-hatching shading",
+          "negativePrompt": "photograph, vibrant colors, cartoon, makeup, smiling",
+          "modelUsed": "ForensicSketch-XL (Graphite Core)",
+          "provider": "pollinations",
+          "confidenceScore": 89,
+          "refinementNotes": "Composite generated from courier driver interview.",
+          "createdAt": "2026-10-26T22:10:00Z",
+          "createdBy": "Elena Rostova",
+          "featuresSnapshot": {
+            "gender": "Female",
+            "ageGroup": "26-35",
+            "faceShape": "Square",
+            "skinTone": "Fair / Pale",
+            "eyesShape": "Almond",
+            "eyeColor": "Hazel",
+            "eyebrows": "Angular High Arch",
+            "nose": "Straight",
+            "jawline": "Square Chiseled",
+            "hairstyle": "Long Slicked",
+            "hairColor": "Black",
+            "facialHair": "Clean Shaven",
+            "distinctiveFeatures": [
+              "High prominent cheekbones"
+            ],
+            "accessories": [
+              "Wire-rim spectacles"
+            ],
+            "refinements": {
+              "ageOffset": 0,
+              "jawWidth": 50,
+              "eyeNarrowness": 50,
+              "noseProminence": 50,
+              "stubbleDensity": 0,
+              "cheekHollow": 50
+            }
+          },
+          "biometricMetrics": {
+            "cranialRatio": 1.28,
+            "interpupillaryDistance": 61.8,
+            "jawAngleDegrees": 118.2,
+            "symmetryScore": 96.4
+          }
+        }
+      ],
+      "primarySketchId": "SKT-0922-V1",
+      "notes": "Initial composite drafted within 1 hour of incident. Matches description from security checkpoint camera 4.",
+      "createdAt": "2026-10-26T21:45:00Z",
+      "updatedAt": "2026-10-26T22:15:00Z"
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "AUD-mvsc5ihy-YIE1",
+      "timestamp": "2026-10-24T03:30:12Z",
+      "userId": "USR-001",
+      "userName": "Dr. Marcus Vance",
+      "userRole": "admin",
+      "action": "LOGIN_SUCCESS",
+      "details": "Investigator authenticated with badge B-8492",
+      "ipAddress": "192.168.1.104",
+      "integrityHash": "33f8c3ab21275734f8a65e264da0d76a289f0cf82abe379286aba7c3690c0d5d"
+    },
+    {
+      "id": "AUD-mvsc5ihy-P9RW",
+      "timestamp": "2026-10-24T03:31:05Z",
+      "userId": "USR-001",
+      "userName": "Dr. Marcus Vance",
+      "userRole": "admin",
+      "action": "CASE_CREATE",
+      "caseId": "CASE-2026-0814",
+      "details": "Created Case CASE-2026-0814: Downtown Vault Burglary",
+      "ipAddress": "192.168.1.104",
+      "integrityHash": "dec3a003536b3c52596bacaea1ba6d48b45bc1d6ccc3ac1bb71fc0cc47afe263"
+    },
+    {
+      "id": "AUD-mvsc5ihy-V9L1",
+      "timestamp": "2026-10-24T04:15:22Z",
+      "userId": "USR-001",
+      "userName": "Dr. Marcus Vance",
+      "userRole": "admin",
+      "action": "SKETCH_GENERATE",
+      "caseId": "CASE-2026-0814",
+      "details": "Generated Composite Sketch v1 using ForensicSketch-XL Engine",
+      "ipAddress": "192.168.1.104",
+      "integrityHash": "706fd2b2ab4c09512a0dc8285d92295b5101710c53466b124f9371469d8d1152"
+    },
+    {
+      "id": "AUD-mvsc5ihy-C2FB",
+      "timestamp": "2026-10-24T05:25:10Z",
+      "userId": "USR-002",
+      "userName": "Elena Rostova",
+      "userRole": "investigator",
+      "action": "LOGIN_SUCCESS",
+      "details": "Forensic Artist Elena Rostova session started",
+      "ipAddress": "192.168.1.104",
+      "integrityHash": "0af9391d729b3212b1dcc5939f189baa66a5dac82e5259879b103cfd0dee0a4a"
+    },
+    {
+      "id": "AUD-mvsc5ihy-JHRM",
+      "timestamp": "2026-10-24T05:30:45Z",
+      "userId": "USR-002",
+      "userName": "Elena Rostova",
+      "userRole": "investigator",
+      "action": "SKETCH_REFINE",
+      "caseId": "CASE-2026-0814",
+      "details": "Refined Composite to v2: Jawline sharpened, stubble increased, scar intensified",
+      "ipAddress": "192.168.1.104",
+      "integrityHash": "a7266ced6aa5d80cfb9eba8878bb62d7e940be39dbfc5bf16ded8426437d0167"
+    },
+    {
+      "id": "AUD-mvsc5ihy-AX86",
+      "timestamp": "2026-10-24T05:35:12Z",
+      "userId": "USR-002",
+      "userName": "Elena Rostova",
+      "userRole": "investigator",
+      "action": "PRIMARY_SELECT",
+      "caseId": "CASE-2026-0814",
+      "details": "Selected Sketch v2 as Primary Composite",
+      "ipAddress": "192.168.1.104",
+      "integrityHash": "704f17d87e02f2a67969fa1875fbc7bfcbdf4bd6e92793a2d94286cae99befb9"
+    },
+    {
+      "id": "AUD-mvsc5ihz-THE5",
+      "timestamp": "2026-10-24T05:40:00Z",
+      "userId": "USR-002",
+      "userName": "Elena Rostova",
+      "userRole": "investigator",
+      "action": "SKETCH_EXPORT",
+      "caseId": "CASE-2026-0814",
+      "details": "Exported High-Resolution Evidence Dossier for CASE-2026-0814",
+      "ipAddress": "192.168.1.104",
+      "integrityHash": "58f0300641d2560d806732cf1328c55c561d1b6e851178b12726a157f4a05981"
+    },
+    {
+      "id": "AUD-mvsc5ihz-2PWD",
+      "timestamp": "2026-10-26T21:45:10Z",
+      "userId": "USR-002",
+      "userName": "Elena Rostova",
+      "userRole": "investigator",
+      "action": "CASE_CREATE",
+      "caseId": "CASE-2026-0922",
+      "details": "Created Case CASE-2026-0922: Harbor Arts District Courier Interception",
+      "ipAddress": "192.168.1.104",
+      "integrityHash": "c76c1ebe35944107395f1e752a23af4a292ff8e5890af8b7fb6de05c521ebe23"
+    },
+    {
+      "id": "AUD-mvsc5ihz-IULP",
+      "timestamp": "2026-10-26T22:10:30Z",
+      "userId": "USR-002",
+      "userName": "Elena Rostova",
+      "userRole": "investigator",
+      "action": "SKETCH_GENERATE",
+      "caseId": "CASE-2026-0922",
+      "details": "Generated Composite Sketch v1 for CASE-2026-0922",
+      "ipAddress": "192.168.1.104",
+      "integrityHash": "3c5d9c9515ecec02f82e4ef43b55d36b890c9c31e00d1f30815fdee14371f130"
+    },
+    {
+      "id": "AUD-mvsc5ihz-SWMA",
+      "timestamp": "2026-10-28T01:50:22Z",
+      "userId": "USR-001",
+      "userName": "Dr. Marcus Vance",
+      "userRole": "admin",
+      "action": "CASE_CREATE",
+      "caseId": "CASE-2026-1005",
+      "details": "Created Case CASE-2026-1005: Research Lab Espionage",
+      "ipAddress": "192.168.1.104",
+      "integrityHash": "1b1e61a88946c1001ee70397a5c68e5a1eb6c51e108b2a0d2687b6c566084203"
+    },
+    {
+      "id": "AUD-mvsc5ihz-THM5",
+      "timestamp": "2026-10-28T02:30:15Z",
+      "userId": "USR-001",
+      "userName": "Dr. Marcus Vance",
+      "userRole": "admin",
+      "action": "SKETCH_GENERATE",
+      "caseId": "CASE-2026-1005",
+      "details": "Generated Composite Sketch v1 for CASE-2026-1005",
+      "ipAddress": "192.168.1.104",
+      "integrityHash": "40b1a969365619d1fd525e23485375c97173693abb88aba2611cd73ef5570f2a"
+    },
+    {
+      "id": "AUD-mvsc5juk-VTVI",
+      "timestamp": "2026-10-28T16:35:29.852Z",
+      "integrityHash": "55cf2b9b24e3e9d5492359f3b0957cac11cb96d3ea47dc3073cdc3e92be0419a",
+      "userId": "USR-001",
+      "userName": "Dr. Marcus Vance",
+      "userRole": "admin",
+      "action": "LOGIN_SUCCESS",
+      "details": "Officer/User Dr. Marcus Vance logged in successfully [Badge: B-8492]",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "AUD-mvsc5jv6-PYYH",
+      "timestamp": "2026-10-28T16:35:29.874Z",
+      "integrityHash": "039fb189d9d2ebe63404fb8ea79475a631a02f7a94cfb1b13465737203dcb511",
+      "userId": "USR-001",
+      "userName": "Dr. Marcus Vance",
+      "userRole": "admin",
+      "action": "SKETCH_REFINE",
+      "caseId": "CASE-2026-1005",
+      "details": "Refined composite to v2 [Notes: \"Witness instructed: widen the mandibular jawline and add deeper graphite shading\"]",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "AUD-mvsc6xu3-36I5",
+      "timestamp": "2026-10-28T16:36:34.635Z",
+      "integrityHash": "b0738a7bf82d83b01718bf1f6e9d943fe90a755aeec5ccb8bfca771aad4314e0",
+      "userId": "USR-001",
+      "userName": "Dr. Marcus Vance",
+      "userRole": "admin",
+      "action": "LOGIN_SUCCESS",
+      "details": "Officer/User Dr. Marcus Vance logged in successfully [Badge: B-8492]",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "AUD-mvsc6xum-P6HL",
+      "timestamp": "2026-10-28T16:36:34.654Z",
+      "integrityHash": "c4334cb1ad057166534b6e781bc1e579c1fad532e9f8e9a630a020d27df3d76f",
+      "userId": "USR-001",
+      "userName": "Dr. Marcus Vance",
+      "userRole": "admin",
+      "action": "SKETCH_REFINE",
+      "caseId": "CASE-2026-1005",
+      "details": "Refined composite to v3 [Notes: \"Witness instructed: widen the mandibular jawline and add deeper graphite shading\"]",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "AUD-mvsce81g-L52K",
+      "timestamp": "2026-10-28T16:42:14.452Z",
+      "integrityHash": "2f3d898b2608b1db4dc8a9f38275a7584936594052731997141b9cda1a53df74",
+      "userId": "USR-001",
+      "userName": "Dr. Marcus Vance",
+      "userRole": "admin",
+      "action": "LOGIN_SUCCESS",
+      "details": "Officer/User Dr. Marcus Vance logged in successfully [Badge: B-8492]",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "AUD-mvscery8-IHAY",
+      "timestamp": "2026-10-28T16:42:40.256Z",
+      "integrityHash": "8fd5408a0af4c6b182280bbe55be0b07004e4246209a6a7e4f63f6f797593b73",
+      "userId": "USR-002",
+      "userName": "Elena Rostova",
+      "userRole": "investigator",
+      "action": "LOGIN_SUCCESS",
+      "details": "Officer/User Elena Rostova logged in successfully [Badge: FA-1044]",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "AUD-mvscokkg-I0Y1",
+      "timestamp": "2026-10-28T16:50:17.248Z",
+      "integrityHash": "c90cd04fc3a84cbe118e14f63c66ce2f6ff80a0465768ce4cb7cfbe3dfd534a5",
+      "userId": "USR-001",
+      "userName": "Dr. Marcus Vance",
+      "userRole": "admin",
+      "action": "LOGIN_SUCCESS",
+      "details": "Officer/User Dr. Marcus Vance logged in successfully [Badge: B-8492]",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "AUD-mvstp3rq-GEAS",
+      "timestamp": "2026-10-29T00:46:35.606Z",
+      "integrityHash": "75a2ea1623877fc1a0e7b7bde6b07f4d8d144c039f194b7f18c87c33bbf86edb",
+      "userId": "USR-001",
+      "userName": "Dr. Marcus Vance",
+      "userRole": "admin",
+      "action": "LOGIN_SUCCESS",
+      "details": "Officer/User Dr. Marcus Vance logged in successfully [Badge: B-8492]",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "AUD-mvstzlk3-DODA",
+      "timestamp": "2026-10-29T00:54:45.219Z",
+      "integrityHash": "94368617bfd0310d29c4f4c86e9313cae0fe4a7bd191ae7a6bb5a27c540b5640",
+      "userId": "USR-001",
+      "userName": "Dr. Marcus Vance",
+      "userRole": "admin",
+      "action": "CASE_CREATE",
+      "caseId": "CASE-2026-5347",
+      "details": "Initiated case dossier: ACCIDENT [Type: Hit & Run Vehicle Incident]",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "AUD-mvsu08f4-M377",
+      "timestamp": "2026-10-29T00:55:14.848Z",
+      "integrityHash": "ae239cdb9156f8ea68db23374f17fd04ae75843066318c1eb90c8da43d7438dc",
+      "userId": "USR-001",
+      "userName": "Dr. Marcus Vance",
+      "userRole": "admin",
+      "action": "SKETCH_GENERATE",
+      "caseId": "CASE-2026-5347",
+      "details": "Generated Composite Sketch Version 1 [Model: Pollinations FLUX (Forensic Pencil Pipeline), Provider: pollinations]",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "AUD-mvsu6721-CYU0",
+      "timestamp": "2026-10-29T00:59:53.017Z",
+      "integrityHash": "8a6e95de085466120c06a50b9deff8f504a433f8dc464891ed1b206c60eb99e5",
+      "userId": "USR-001",
+      "userName": "Dr. Marcus Vance",
+      "userRole": "admin",
+      "action": "CASE_DELETE",
+      "caseId": "CASE-2026-5347",
+      "details": "Archived/Deleted case dossier: ACCIDENT",
+      "ipAddress": "::1"
+    },
+    {
+      "id": "AUD-mvsz4pvk-D5UI",
+      "timestamp": "2026-10-29T03:18:42.176Z",
+      "integrityHash": "e866acbb2847514d78f2e8b0256d9ddb7c4501608ebd06632d4bcc2dfb12685c",
+      "userId": "USR-001",
+      "userName": "Dr. Marcus Vance",
+      "userRole": "admin",
+      "action": "CASE_DELETE",
+      "caseId": "CASE-2026-1005",
+      "details": "Archived/Deleted case dossier: University Research Lab Cyber Infiltration — Suspect \"Cipher\"",
+      "ipAddress": "::1"
+    }
+  ],
+  "config": {
+    "provider": "pollinations",
+    "apiKey": "",
+    "modelName": "flux"
+  }
+}

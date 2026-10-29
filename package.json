@@ -1,0 +1,25 @@
+{
+  "name": "sketchtrace-ai",
+  "version": "1.0.0",
+  "description": "SketchTrace AI — AI Crime Scene Sketch Generator from Witness Description",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "build:client": "npm --prefix client run build",
+    "build:server": "npm --prefix server run build",
+    "build": "npm run build:client && npm run build:server",
+    "start": "npm --prefix server run start",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "test:e2e": "cd server && node test-full-stack.js"
+  },
+  "keywords": [
+    "forensics",
+    "ai",
+    "sketch-generator",
+    "composite-artist",
+    "investigation",
+    "hackathon"
+  ],
+  "author": "SketchTrace AI Team",
+  "license": "MIT"
+}
